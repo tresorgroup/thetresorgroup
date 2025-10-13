@@ -11,6 +11,11 @@ export const projectId = assertValue(
   'Missing environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID',
 )
 
+// Validate project ID format
+if (!/^[a-z0-9-]+$/.test(projectId)) {
+  throw new Error(`Invalid projectId format: ${projectId}. Must contain only lowercase letters, numbers, and dashes.`)
+}
+
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
     throw new Error(errorMessage)
