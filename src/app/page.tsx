@@ -19,7 +19,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'The Tresor Group exists to coach new and experienced investors to finally reach their milestones.',
 }
 
 function Hero() {
@@ -31,9 +31,9 @@ function Hero() {
           banner={
             <Link
               href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
-              className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
+              className="flex items-center gap-1 rounded-full bg-gray-300 px-3 py-0.5 text-sm/6 font-medium text-gray-950 data-hover:bg-yellow-300"
             >
-              Radiant raises $100M Series A from Tailwind Ventures
+              The Tresor Group launches new coaching platform
               <ChevronRightIcon className="size-4" />
             </Link>
           }
@@ -43,8 +43,7 @@ function Hero() {
             Close every deal.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Radiant helps you sell more by revealing sensitive information about
-            your customers.
+            The Tresor Group exists to coach new and experienced investors to finally reach their milestones.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="#">Get started</Button>
@@ -63,7 +62,7 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          Join our community of like-minded investors and get deals done.
         </Heading>
         <Screenshot
           width={1216}
@@ -81,14 +80,14 @@ function BentoSection() {
     <Container>
       <Subheading>Sales</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+        Finding deals has never been easier.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Insight"
-          title="Get perfect clarity"
-          description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          title="The right tools, the right guidance"
+          description="The Tresor Group provides you with the tools and guidance you need to find deals and close them."
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
           }
